@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Ayrton Senna</title>
+  <link rel="stylesheet" href="../project.css">
+  <script defer src="../scripts/driverNav.js"></script>
+  <style>
+    body {
+      background: #000;
+      color: rgb(238, 249, 249);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      text-shadow: 0 0 10px rgb(245, 4, 4);
+    }
+
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile img {
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgb(244, 248, 6);
+    }
+
+    .info {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .info h2 {
+      font-size: 1.6rem;
+      margin-top: 0;
+    }
+
+    .stats {
+      margin: 20px 0;
+    }
+
+    .stats p {
+      margin: 5px 0;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .nav-buttons a {
+      padding: 10px 20px;
+      background: rgb(74, 246, 6);
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .nav-buttons a:hover {
+      background: rgba(0, 17, 255, 0.467);
+    }
+
+    .track-gallery {
+      margin-top: 40px;
+    }
+
+    .track-gallery h2 {
+      margin-bottom: 10px;
+    }
+
+    .track-gallery img {
+      width: 150px;
+      border-radius: 8px;
+      margin: 5px;
+      box-shadow: 0 0 10px rgb(242, 251, 251);
+    }
+
+    audio {
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ayrton Senna</h1>
+
+    <div class="profile">
+      <img src="../images/driver.png" alt="Гонщик">
+      <div class="info">
+        <h2>Биография</h2>
+        <p>Айртон Сенна, легендарный бразильский гонщик, родился в 1960 году и стал одним из самых ярких пилотов в истории Формулы-1. Его карьера охватила команды Lotus, McLaren и Williams. Сенна выиграл три чемпионских титула (1988, 1990, 1991), а его мастерство в дождливых условиях, как на Гран-при Европы 1993 года, стало эталоном для подражания. Он известен не только как боец на трассе, но и как человек, боровшийся за безопасность в автоспорте. Трагическая гибель Сенны в аварии на Гран-при Сан-Марино в 1994 году потрясла мир, сделав его символом риска и страсти в гонках.</p>
+
+        <div class="stats">
+          <h2>Регалии</h2>
+          <p><strong>Титулы:</strong> X</p>
+          <p><strong>Победы 41:</strong> Y</p>
+          <p><strong>Поулы 65:</strong> Z</p>
+          <p><strong>Погоняло:</strong> "The Rain Magic"</p>
+          <p><strong>Любимые трассы:</strong> Monza, Monaco, Spa</p>
+          <p><strong>Национальность:</strong>Бразилец</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="track-gallery">
+      <h2>Галерея трасс</h2>
+      <img src="../images/track1.png" alt="Трасса 1">
+      <img src="../images/track2.png" alt="Трасса 2">
+      <img src="../images/track3.png" alt="Трасса 3">
+    </div>
+
+    <audio controls>
+      <source src="../audio/start.mp3" type="audio/mpeg">
+      Твой браузер не поддерживает аудио.
+    </audio>
+
+    <div class="nav-buttons">
+      <a href="назад.html">← Назад</a>
+      <a href="следующий.html">Вперёд →</a>
+    </div>
+  </div>
+</body>
+</html>
